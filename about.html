@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Makhmetova Aigerim - About Me</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&family=Space+Mono&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <style>
+        /* --- RESET & BASICS --- */
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Space Mono', monospace; color: #888; line-height: 1.6; background-color: #fff; }
+
+        /* --- HEADER STYLES (Fixed Top) --- */
+        header { background-color: #1a1a1a; height: 80px; width: 100%; display: flex; align-items: center; justify-content: center; position: sticky; top: 0; z-index: 1000; }
+        .header-inner { width: 100%; max-width: 1100px; padding: 0 20px; display: flex; justify-content: center; align-items: center; position: relative; }
+        
+        .logo { font-family: 'Poppins', sans-serif; font-weight: 700; color: #fff; font-size: 1.2rem; text-decoration: none; position: absolute; left: 20px; }
+.logo img {
+    height: 50px;   
+    width: auto;
+}
+
+        nav ul { list-style: none; display: flex; gap: 50px; }
+        nav ul li a { text-decoration: none; font-family: 'Poppins', sans-serif; font-size: 0.9rem; color: #888; transition: color 0.3s; }
+        nav ul li a:hover, nav ul li a.active { color: #fff; }
+
+        /* --- MAIN LAYOUT --- */
+        main { max-width: 1000px; margin: 80px auto; padding: 0 20px; display: flex; flex-wrap: wrap; justify-content: center; align-items: flex-start; gap: 80px; }
+
+        .image-col { flex: 0 0 auto; }
+        .profile-img { width: 320px; height: 320px; border-radius: 50%; object-fit: cover; background-color: #ddd; box-shadow: 0 10px 30px rgba(0,0,0,0.15); }
+
+        .text-col { flex: 1; min-width: 300px; padding-top: 10px; }
+        .text-block { margin-bottom: 50px; }
+
+        h1 { font-family: 'Poppins', sans-serif; font-weight: 700; font-size: 2.2rem; color: #000; margin-bottom: 20px; line-height: 1.2; }
+        p { font-size: 0.85rem; max-width: 550px; }
+
+        /* --- FOOTER --- */
+        footer { margin-top: 100px; padding: 60px 20px; border-top: 1px solid #eee; text-align: center; }
+        .footer-logo { font-family: 'Poppins', sans-serif; font-weight: 900; font-size: 2.5rem; color: #000; display: block; margin-bottom: 10px; }
+        .contacts-text { display: block; font-size: 0.9rem; margin-bottom: 25px; color: #666; }
+                .footer-logo img {
+    height: 60px;
+    width: auto;
+}
+        .social-icons { display: flex; justify-content: center; gap: 30px; }
+        .social-icons a { color: #000; font-size: 2rem; text-decoration: none; transition: transform 0.2s; }
+        .social-icons a:hover { transform: scale(1.1); }
+
+        @media (max-width: 850px) {
+            .header-inner { justify-content: space-between; }
+            .logo { position: static; }
+            nav ul { display: none; }
+            main { flex-direction: column; align-items: center; text-align: center; gap: 40px; }
+            p { margin: 0 auto; }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="header-inner">
+       <a href="index.html" class="logo">
+    <img src="images/logo.png" alt="Logo">
+</a>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="portfolio.html">Portfolio</a></li>
+                    <li><a href="about.html" class="active">About me</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="image-col">
+            <img src="images/me.png" alt="Profile" class="profile-img">
+        </div>
+
+        <div class="text-col">
+            <div class="text-block">
+                <h1>About me</h1>
+                <p>My name is Aigerim Makhmetova. I'm an aspiring graphic designer and UX/UI designer who enjoys creating clean, modern visuals and user-friendly interfaces. I love working with colour, typography and layout to turn ideas into simple, clear designs that feel easy to use.</p>
+            </div>
+
+            <div class="text-block">
+                <h1>Education &<br>Experience</h1>
+                <p>I am currently studying Graphic Design at George Brown College and I'm in my 3rd semester. Through this program I'm developing my skills in visual communication, branding, typography and digital design.</p>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+    <span class="footer-logo">
+    <img src="images/logo.png" alt="Logo">
+</span>
+        <span class="contacts-text">Contacts</span>
+        <div class="social-icons">
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="far fa-comment-dots"></i></a>
+            <a href="#"><i class="fas fa-phone"></i></a>
+        </div>
+    </footer>
+
+</body>
+</html>
